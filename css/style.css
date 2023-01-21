@@ -1,3 +1,67 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+select {
+  font: inherit;
+}
+
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.first-section {
+  background-color: aqua;
+}
+
+.destinations {
+  background-color: grey;
+}
+
+.special-offer {
+  background-color: brown;
+}
+
+.our-blog {
+  background-color: chartreuse;
+}
+
+.trip-planners {
+  background-color: pink;
+}
+
+.travelers-experiences {
+  background-color: yellow;
+}
+
+.news-lettertext {
+  background-color: rebeccapurple;
+}
 
 /*# sourceMappingURL=style.css.map */

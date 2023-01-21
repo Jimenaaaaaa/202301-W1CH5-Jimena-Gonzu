@@ -6,22 +6,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Travellian</title>
 </head>
 
 <body>
   <div class="first-section">
-    <header>
-      <img src="" alt="" class="back_image">
+    <header class="first-section__header">
+      <div>
+        <img src="/img/logo-white.svg" alt="">
+        <img src="/img/travellian.svg" alt="">
+      </div>
       <div class="header_menu">
+        <img src="/img/icon-burger.svg" alt="">
         <nav></nav>
         <nav></nav>
       </div>
     </header>
-    <section class="head-tittle">
-      <h1>Start your unforgettable journey with us.</h1>
-      <p>The best travel for your journey begins now</p>
-      <nav></nav>
+    <section class="head-title">
+      <div class="head-title__text">
+        <h1>Start your unforgettable journey with us.</h1>
+        <p>The best travel for your journey begins now</p>
+      </div>
+      <form action="submit" class="head-title__form">
+        <label for="destination">DESTINATION</label>
+        <input id="destination" type="text" name="destination" placeholder="Dubai">
+        <label for="person">PERSON</label>
+        <input id="person" type="text" name="person" placeholder="2">
+        <label for="check-in">CHECK-IN</label>
+        <input id="check-in" type="text" name="check-in" placeholder="Sun, 17th Sep 2020">
+        <label for="check-out">CHECK OUT</label>
+        <input id="check-out" type="text" name="check-out" placeholder="Tue, 17th Oct 2020">
+      </form>
     </section>
   </div>
 
@@ -228,7 +244,7 @@
 
   <footer>
     <div class="footer-img">
-      <img class='footer__mainLogo="">
+      <img class='footer__mainLogo'>
       <p></p>
     </div>
     <div>

@@ -63,3 +63,46 @@ h6 {
 .news-lettertext {
   background-color: rebeccapurple;
 }
+
+.first-section {
+  padding: 1rem;
+  background-image: url(/img/header.png);
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img {
+      height: 1rem;
+    }
+  }
+  .head-title {
+    &__text {
+      color: white;
+      padding: 5rem 0;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+       font-size: 1.1rem;
+      }
+    }
+    &__form {
+      padding: 1rem;
+      background-color: white;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      input {
+        border: none;
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
+
+.header-menu {
+  img {
+    height: 1.5rem;
+  }
+}

@@ -64,4 +64,42 @@ h6 {
   background-color: rebeccapurple;
 }
 
+.first-section {
+  padding: 1rem;
+  background-image: url(/img/header.png);
+}
+.first-section__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.first-section__header img {
+  height: 1rem;
+}
+.first-section .head-title__text {
+  color: white;
+  padding: 5rem 0;
+}
+.first-section .head-title__text h1 {
+  font-size: 2.5rem;
+}
+.first-section .head-title__text p {
+  font-size: 1.1rem;
+}
+.first-section .head-title__form {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.first-section .head-title__form input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.header-menu img {
+  height: 1.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */

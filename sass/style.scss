@@ -248,16 +248,34 @@ h6 {
     @include section-tittles();
   }
   &__nav {
-    p {
+    > p {
       @include section-subtitles();
     }
   }
   &__button {
     @include orange-buttons();
     width: 9rem;
+    margin-bottom: 2rem;
+  }
+  &__img {
+    padding: 2rem 0rem;
+    > div {
+      display: flex;
+      justify-content: space-between;
+    }
+    >img {
+      width: 287px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
+  &__stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
-
 
 @media (min-width: 800px) {
   .first-section {

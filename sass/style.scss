@@ -14,6 +14,13 @@
   padding: 2rem 0rem;
   font-size: 1.2rem;
 }
+@mixin orange-buttons {
+  font-size: 1.2rem;
+  background-color: #ff7700;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+}
 
 *::before,
 *::after {
@@ -93,7 +100,7 @@ h6 {
 }
 
 .special-offer {
-  background-color: brown;
+  background-color: rgb(255, 255, 255);
 }
 
 .our-blog {
@@ -154,4 +161,230 @@ h6 {
 
 .news-lettertext {
   background-color: rebeccapurple;
+}
+
+.first-section {
+  padding: 1rem;
+  background-image: url(/img/header.avif);
+  background-size: cover;
+  background-position: center;
+
+  &__nav {
+    visibility: hidden;
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    img {
+      height: 1rem;
+    }
+  }
+  .head-title {
+    padding-bottom: 5rem;
+    &__text {
+      color: white;
+      padding: 7rem 0;
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+    &__form {
+      background-color: white;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      form {
+        padding: 1rem;
+      }
+      &--flex {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid black;
+      }
+    }
+    &__book-now {
+      background-color: rgb(255, 134, 64);
+      padding: 1.5rem;
+      border-radius: 0rem 0rem 1rem 1rem;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        color: white;
+        font-size: 2rem;
+        img {
+          height: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.header-menu {
+  img {
+    height: 1.5rem;
+  }
+}
+
+.special-offer {
+  padding: 1rem;
+  &__title {
+    @include section-tittles;
+  }
+  > p {
+    @include section-subtitles;
+  }
+}
+
+.offer-pics {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow: hidden;
+  &__pic1 {
+    min-width: 18rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-image: url(/img/special-offer-1.png);
+    background-size: auto;
+
+    &-main {
+      height: 250px;
+    }
+    &-text {
+      padding: 1rem;
+      border-radius: 0rem 0rem 1rem 1rem;
+      background-color: rgb(255, 246, 234);
+      h3 {
+        font-family: sans-serif;
+        font-size: 1.5rem;
+      }
+      > p {
+        font-size: 1.2rem;
+        line-height: 1.3em;
+      }
+    }
+    &-stars {
+      padding: 0.5rem 0rem 1rem 0rem;
+    }
+    &-bottom {
+      padding: 1rem 0rem;
+      p {
+        padding: 1rem 0rem;
+        display: flex;
+        align-items: center;
+      }
+
+      span {
+        padding: 0rem rem;
+        color: #ff7700;
+        font-size: 2rem;
+      }
+
+      div {
+        @include orange-buttons();
+        width: 5rem;
+      }
+    }
+  }
+  &__pic2 {
+    min-width: 18rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-image: url(/img/special-offer-2.png);
+    background-size: auto;
+  }
+  &__pic3 {
+    min-width: 18rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-image: url(/img/special-offer-3.png);
+    background-size: auto;
+  }
+}
+
+.trip-planners {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  h2 {
+    @include section-tittles();
+  }
+  &__nav {
+    p {
+      @include section-subtitles();
+    }
+  }
+  &__button {
+    @include orange-buttons();
+    width: 9rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .first-section {
+    &__nav {
+      visibility: visible;
+    }
+    .head-title {
+      padding-bottom: 5rem;
+      &__form {
+        background-color: white;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        form {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          padding: 1rem;
+        }
+        &--flex {
+          width: 10rem;
+          display: flex;
+          flex-direction: column;
+          padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+        }
+      }
+      &__book-now {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        border-radius: 0rem 1rem 1rem 0rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1130px) {
+  .first-section {
+    .head-title {
+      &__form {
+        form {
+          gap: 3rem;
+        }
+      }
+      &__book-now {
+        height: 60px;
+        border-radius: 0rem 1rem 1rem 0rem;
+      }
+    }
+  }
 }

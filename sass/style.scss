@@ -11,6 +11,14 @@
   font-size: 1.2rem;
 }
 
+@mixin orange-buttons {
+  font-size: 1.2rem;
+  background-color: #ff7700;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+}
+
 *::before,
 *::after {
   box-sizing: border-box;
@@ -79,7 +87,17 @@ h6 {
 
 .first-section {
   padding: 1rem;
-  background-image: url(/img/header.png);
+  background-image: url(/img/header.avif);
+  background-size: cover;
+  background-position: center;
+
+  &__nav {
+    visibility: hidden;
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 
   &__header {
     display: flex;
@@ -202,11 +220,7 @@ h6 {
       }
 
       div {
-        font-size: 1.2rem;
-        background-color: #ff7700;
-        padding: 1rem;
-        color: white;
-        border-radius: 1rem;
+        @include orange-buttons();
         width: 5rem;
       }
     }
@@ -222,5 +236,78 @@ h6 {
     border-radius: 1rem 1rem 1rem 1rem;
     background-image: url(/img/special-offer-3.png);
     background-size: auto;
+  }
+}
+
+.trip-planners {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  h2 {
+    @include section-tittles();
+  }
+  &__nav {
+    p {
+      @include section-subtitles();
+    }
+  }
+  &__button {
+    @include orange-buttons();
+    width: 9rem;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .first-section {
+    &__nav {
+      visibility: visible;
+    }
+    .head-title {
+      padding-bottom: 5rem;
+      &__form {
+        background-color: white;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        form {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          padding: 1rem;
+        }
+        &--flex {
+          width: 10rem;
+          display: flex;
+          flex-direction: column;
+          padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+        }
+      }
+      &__book-now {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        border-radius: 0rem 1rem 1rem 0rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1130px) {
+  .first-section {
+    .head-title {
+      &__form {
+        form {
+          gap: 3rem;
+        }
+      }
+      &__book-now {
+        height: 60px;
+        border-radius: 0rem 1rem 1rem 0rem;
+      }
+    }
   }
 }

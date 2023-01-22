@@ -112,13 +112,13 @@ h6 {
   max-height: 300px;
 }
 .our-blog__italytittle {
+  font-family: "Playfair Display", serif;
   line-height: 3rem;
   font-size: large;
-  font-family: "Rubik", sans-serif;
   padding: 0.5rem;
 }
 .our-blog__rightText {
-  font-family: "Playfair Display", serif;
+  font-family: "Rubik", sans-serif;
   padding: 1rem;
   align-items: center;
 }
@@ -141,8 +141,18 @@ h6 {
   background-color: pink;
 }
 
-.travelers-experiences {
-  background-color: yellow;
+.travelers-experiences__text {
+  max-width: 3ch;
+  font-family: "Playfair Display", serif;
+  padding: 0.5rem 0rem;
+  font-size: 1.5rem;
+  border-bottom-width: thick;
+  border-bottom: 2px solid #ffa500;
+  text-underline-offset: 0.8rem;
+}
+.travelers-experiences__smallText {
+  padding-top: 1rem;
+  padding: 1rem;
 }
 
 .news-lettertext {
@@ -364,6 +374,57 @@ h6 {
     justify-content: space-between;
     height: 60px;
     border-radius: 0rem 1rem 1rem 0rem;
+  }
+  .destinations {
+    background-color: white;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .destinations__photos {
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .destinations__imgHeight {
+    max-height: 499px;
+  }
+  .our-blog {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-blog__tittletext {
+    padding-left: 1rem;
+  }
+  .our-blog__smalltext {
+    font-size: large;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .our-blog__img {
+    max-height: 800px;
+  }
+  .our-blog__mainImg {
+    justify-content: normal;
+    display: flex;
+  }
+  .our-blog__italytittle {
+    padding-bottom: 2rem;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+  }
+  .our-blog__forDesktop {
+    display: flex;
+    flex-direction: row;
+  }
+  .our-blog__text {
+    font-size: 2rem;
+  }
+  .our-blog__readmoretext, .our-blog__morelogo {
+    padding: 1rem;
   }
 }
 @media (min-width: 1130px) {

@@ -124,13 +124,14 @@ h6 {
     max-height: 300px;
   }
   &__italytittle {
+    font-family: "Playfair Display", serif;
     line-height: 3rem;
     font-size: large;
-    font-family: "Rubik", sans-serif;
+
     padding: 0.5rem;
   }
   &__rightText {
-    font-family: "Playfair Display", serif;
+    font-family: "Rubik", sans-serif;
     padding: 1rem;
     align-items: center;
   }
@@ -156,7 +157,14 @@ h6 {
 }
 
 .travelers-experiences {
-  background-color: yellow;
+  &__text {
+    max-width: 3ch;
+    @include section-tittles;
+  }
+  &__smallText {
+    padding-top: 1rem;
+    padding: 1rem;
+  }
 }
 
 .news-lettertext {
@@ -369,6 +377,58 @@ h6 {
         height: 60px;
         border-radius: 0rem 1rem 1rem 0rem;
       }
+    }
+  }
+  .destinations {
+    background-color: white;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    &__photos {
+      padding-left: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    &__imgHeight {
+      max-height: 499px;
+    }
+  }
+  .our-blog {
+    display: flex;
+    flex-direction: column;
+    &__tittletext {
+      padding-left: 1rem;
+    }
+    &__smalltext {
+      font-size: large;
+      padding: 0.5rem;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+    }
+    &__img {
+      max-height: 800px;
+    }
+    &__mainImg {
+      justify-content: normal;
+      display: flex;
+    }
+    &__italytittle {
+      padding-bottom: 2rem;
+      font-size: xx-large;
+      display: flex;
+      flex-direction: column;
+    }
+    &__forDesktop {
+      display: flex;
+      flex-direction: row;
+    }
+    &__text {
+      font-size: 2rem;
+    }
+    &__readmoretext,
+    &__morelogo {
+      padding: 1rem;
     }
   }
 }

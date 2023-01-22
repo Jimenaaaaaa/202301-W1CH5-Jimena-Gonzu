@@ -2,10 +2,17 @@
 <html lang="en">
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
   <title>Travellian</title>
 </head>
 
@@ -27,30 +34,42 @@
 
   <main>
     <section class="destinations">
-      <h2>popular destinations</h2>
+      <div class="destinations__populartext">
+        <h2>Popular destinations</h2>
+      </div>
+      <div class="destinations__text2">
+        <p>Most popular destinations around the world,from historical places to natural
+          wonders</p>
+      </div>
       <div>
-        <p>Most popular destinations around the world,from historical places to natural wonders</p>
-        <nav class="boton">
-          <ul>
-            <li></li>
-            <li></li>
+        <div class="destinations__photos">
+          <div class="destination__1">
+            <img src="img/popular-destinations-1.png" alt="" class="destinations__imgHeight">
+          </div>
+          <div class="destination__2">
+            <img src="img/popular-destinations-2.png" alt="" class="destinations__imgHeight">
+          </div>
+          <div class="destination__3">
+            <img src="img/popular-destinations-3.png" alt="" class="destinations__imgHeight">
+          </div>
+        </div>
+
+        <nav>
+          <ul class="destinations__nav">
+            <li>
+              <a href="">
+                <img src="/img/left.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/img/right.png" alt="">
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
-      <div class="destination__photos">
-        <div class="destintation__1">
-          <p>Monument of Berlin</p>
-          <p>Berlin Germany</p>
-        </div>
-        <div class="destination__2">
-          <p>Millenium Bridge</p>
-          <p>London, United Kingdom</p>
-        </div>
-        <div class="destination__3">
-          <p>Rialto Bridge</p>
-          <p>Venice, Italy</p>
-        </div>
-      </div>
+
     </section>
 
     <section class="special-offer">
@@ -101,32 +120,47 @@
     </section>
 
     <section class="our-blog">
-      <h2>Our blog</h2>
-      <p>An insight the increidble experience in the world</p>
-      <div class="main-ourpic-blog">
+      <div class="our-blog__tittletext">
+        <h2>Our blog</h2>
+      </div>
+      <div class="our-blog__smalltext">
+        <p>An insight the increidble experience in the world</p>
+      </div>
+      <div class="our-blog__mainImg">
+        <img class="our-blog__img" src="img/our-blog.png" alt="Imagen del mar">
+      </div>
+      <div class="our-blog__italytittle">
+        <h2>Beautiful Italy</h2>
+        <h2>Let's travel</h2>
 
       </div>
-      <div class="big-right-text">
-        <div class="our_blog_tittle">
-          <h2>Beautiful Italy
-            Let's travel
-          </h2>
-          <p class="blog__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sint soluta dolorum hic? Totam ipsa atque
-            vero deleniti repellendus quisquam architecto, temporibus saepe volupt
-            atum id. Culpa ea quisquam iste magni!
-          </p>
-
-          <nav class="read-more-blog">
-            <ul class="readmore__text">
-              <li>Read More --></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="our-blog__rightText">
+        <p class="our-blog__text">
+          Our Blog
+          An insight the incredible experience in the world
+          Beautiful Italy
+          Let’s travel
+          But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+          will give
+          you a complete account of the system and expound the actual teachings of the great explorer of the truth,
+          the master-
+          builder of human happiness. No one rejects, dislike, or avoids plasure itself, because it is pleasure, but
+          because those
+          who do not know how to pursue pleasure rationally encounter consequences that are extremly painful. Nor
+          again is there
+          anyone who loves or pursues.
+        </p>
+      </div>
+      <div class="our-blog__readmore">
+        <a class="our-blog__readmoretext" href="">
+          <p>Read more</p>
+        </a>
+        <img src="/img/Vector.png" alt="" class="our-blog__morelogo">
+      </div>
       </div>
     </section>
 
-    <section class="trip-planners">
+    <section class=" trip-planners">
       <h2>Trip Planners</h2>
       <div class="planners__nav">
         <p>20 years from now you will be more disappointed by the thing that you didn't do. Stop regretting
@@ -228,7 +262,7 @@
 
   <footer>
     <div class="footer-img">
-      <img class='footer__mainLogo="">
+      <img class='footer__mainLogo'>
       <p></p>
     </div>
     <div>

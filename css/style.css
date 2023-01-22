@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 *::before,
 *::after {
   box-sizing: border-box;
@@ -41,7 +43,42 @@ h6 {
 }
 
 .destinations {
-  background-color: grey;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.destinations__populartext {
+  max-width: 3ch;
+  font-family: "Playfair Display", serif;
+  padding: 0.5rem 0rem;
+  font-size: 1.5rem;
+  border-bottom-width: thick;
+  border-bottom: 2px solid #ffa500;
+  text-underline-offset: 0.8rem;
+}
+.destinations__text2 {
+  font-family: "Rubik", sans-serif;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.destinations__imgHeight {
+  max-height: 300px;
+}
+.destinations__photos {
+  overflow: hidden;
+  gap: 1.5rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.destinations__nav {
+  justify-content: space-evenly;
+  margin-left: 1%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
 .special-offer {
@@ -49,15 +86,73 @@ h6 {
 }
 
 .our-blog {
-  background-color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+}
+.our-blog__tittletext {
+  font-family: "Playfair Display", serif;
+  padding: 0.5rem 0rem;
+  font-size: 1.5rem;
+  border-bottom-width: thick;
+  border-bottom: 2px solid #ffa500;
+  text-underline-offset: 0.8rem;
+}
+.our-blog__smalltext {
+  font-family: "Rubik", sans-serif;
+  padding: 2.5rem;
+}
+.our-blog__mainImg {
+  display: flex;
+  justify-content: space-around;
+}
+.our-blog__img {
+  padding: 0.5rem;
+  max-height: 300px;
+}
+.our-blog__italytittle {
+  font-family: "Playfair Display", serif;
+  line-height: 3rem;
+  font-size: large;
+  padding: 0.5rem;
+}
+.our-blog__rightText {
+  font-family: "Rubik", sans-serif;
+  padding: 1rem;
+  align-items: center;
+}
+.our-blog__readmoretext {
+  text-decoration: none;
+  color: #ffa500;
+}
+.our-blog__morelogo {
+  width: 2rem;
+  filter: invert(51%) sepia(63%) saturate(4944%) hue-rotate(7deg) brightness(108%) contrast(103%);
+}
+.our-blog__readmore {
+  padding-left: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .trip-planners {
   background-color: pink;
 }
 
-.travelers-experiences {
-  background-color: yellow;
+.travelers-experiences__text {
+  max-width: 3ch;
+  font-family: "Playfair Display", serif;
+  padding: 0.5rem 0rem;
+  font-size: 1.5rem;
+  border-bottom-width: thick;
+  border-bottom: 2px solid #ffa500;
+  text-underline-offset: 0.8rem;
+}
+.travelers-experiences__smallText {
+  padding-top: 1rem;
+  padding: 1rem;
 }
 
 .news-lettertext {
@@ -143,6 +238,7 @@ h6 {
   padding: 1rem;
 }
 .special-offer__title {
+  font-family: "Playfair Display", serif;
   padding: 0.5rem 0rem;
   font-size: 1.5rem;
   border-bottom-width: thick;
@@ -226,6 +322,7 @@ h6 {
   padding: 1rem;
 }
 .trip-planners h2 {
+  font-family: "Playfair Display", serif;
   padding: 0.5rem 0rem;
   font-size: 1.5rem;
   border-bottom-width: thick;
@@ -277,6 +374,57 @@ h6 {
     justify-content: space-between;
     height: 60px;
     border-radius: 0rem 1rem 1rem 0rem;
+  }
+  .destinations {
+    background-color: white;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .destinations__photos {
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .destinations__imgHeight {
+    max-height: 499px;
+  }
+  .our-blog {
+    display: flex;
+    flex-direction: column;
+  }
+  .our-blog__tittletext {
+    padding-left: 1rem;
+  }
+  .our-blog__smalltext {
+    font-size: large;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .our-blog__img {
+    max-height: 800px;
+  }
+  .our-blog__mainImg {
+    justify-content: normal;
+    display: flex;
+  }
+  .our-blog__italytittle {
+    padding-bottom: 2rem;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+  }
+  .our-blog__forDesktop {
+    display: flex;
+    flex-direction: row;
+  }
+  .our-blog__text {
+    font-size: 2rem;
+  }
+  .our-blog__readmoretext, .our-blog__morelogo {
+    padding: 1rem;
   }
 }
 @media (min-width: 1130px) {

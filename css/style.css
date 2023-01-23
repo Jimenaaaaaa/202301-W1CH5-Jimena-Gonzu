@@ -51,6 +51,7 @@ h6 {
   font-family: "Playfair Display", serif;
   padding: 0.5rem 0rem;
   font-size: 1.5rem;
+  color: #331811;
   border-bottom-width: thick;
   border-bottom: 2px solid #ffa500;
   text-underline-offset: 0.8rem;
@@ -79,10 +80,6 @@ h6 {
   list-style: none;
 }
 
-.special-offer {
-  background-color: rgb(255, 255, 255);
-}
-
 .our-blog {
   padding: 1rem;
   padding-bottom: 3rem;
@@ -95,6 +92,7 @@ h6 {
   font-family: "Playfair Display", serif;
   padding: 0.5rem 0rem;
   font-size: 1.5rem;
+  color: #331811;
   border-bottom-width: thick;
   border-bottom: 2px solid #ffa500;
   text-underline-offset: 0.8rem;
@@ -144,6 +142,7 @@ h6 {
   font-family: "Playfair Display", serif;
   padding: 0.5rem 0rem;
   font-size: 1.5rem;
+  color: #331811;
   border-bottom-width: thick;
   border-bottom: 2px solid #ffa500;
   text-underline-offset: 0.8rem;
@@ -179,16 +178,26 @@ h6 {
 
 .first-section {
   padding: 1rem;
-  background-image: url(/img/header.avif);
+  background-image: url(/img/header2.jpeg);
   background-size: cover;
   background-position: center;
 }
 .first-section__nav {
-  visibility: hidden;
+  display: none;
 }
 .first-section__nav ul {
   display: flex;
   flex-direction: row;
+}
+.first-section__nav ul li {
+  list-style: none;
+  color: white;
+  font-family: "Rubik";
+  font-weight: bolder;
+  padding: 0rem 1rem;
+}
+.first-section__button {
+  background-color: #ff7757;
 }
 .first-section__header {
   display: flex;
@@ -211,8 +220,11 @@ h6 {
 }
 .first-section .head-title__text p {
   font-size: 1.1rem;
+  font-family: "Rubik";
+  font-weight: 500;
 }
 .first-section .head-title__form {
+  font-family: "Rubik";
   background-color: white;
   border-radius: 1rem;
   display: flex;
@@ -248,10 +260,6 @@ h6 {
   height: 1rem;
 }
 
-.header-menu img {
-  height: 1.5rem;
-}
-
 .special-offer {
   padding: 1rem;
   padding-bottom: 7rem;
@@ -260,6 +268,7 @@ h6 {
   font-family: "Playfair Display", serif;
   padding: 0.5rem 0rem;
   font-size: 1.5rem;
+  color: #331811;
   border-bottom-width: thick;
   border-bottom: 2px solid #ffa500;
   text-underline-offset: 0.8rem;
@@ -268,6 +277,7 @@ h6 {
   font-family: "Rubik";
   padding: 2rem 0rem;
   font-size: 1.2rem;
+  color: #61291c;
 }
 
 .offer-pics {
@@ -288,7 +298,7 @@ h6 {
 .offer-pics__pic1-text {
   padding: 1rem;
   border-radius: 0rem 0rem 1rem 1rem;
-  background-color: rgb(255, 246, 234);
+  background-color: #ffd2c7;
 }
 .offer-pics__pic1-text h3 {
   font-family: "Rubik";
@@ -311,12 +321,12 @@ h6 {
 }
 .offer-pics__pic1-bottom span {
   padding: 0rem rem;
-  color: #ff7700;
+  color: #61291c;
   font-size: 2rem;
 }
 .offer-pics__pic1-bottom div {
   font-size: 1.2rem;
-  background-color: #ff7700;
+  background-color: #ff7757;
   padding: 1rem;
   color: white;
   border-radius: 1rem;
@@ -346,6 +356,7 @@ h6 {
   font-family: "Playfair Display", serif;
   padding: 0.5rem 0rem;
   font-size: 1.5rem;
+  color: #331811;
   border-bottom-width: thick;
   border-bottom: 2px solid #ffa500;
   text-underline-offset: 0.8rem;
@@ -355,10 +366,11 @@ h6 {
   font-family: "Rubik";
   padding: 2rem 0rem;
   font-size: 1.2rem;
+  color: #61291c;
 }
 .trip-planners__button {
   font-size: 1.2rem;
-  background-color: #ff7700;
+  background-color: #ff7757;
   padding: 1rem;
   color: white;
   border-radius: 1rem;
@@ -428,60 +440,111 @@ h6 {
   padding: 1rem 0rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 760px) {
+  .first-section {
+    padding: 2rem;
+  }
+  .first-section .header_menu img {
+    display: none;
+  }
+  .first-section__header > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .first-section__header img:first-child {
+    height: 2.3rem;
+    padding-right: 1rem;
+  }
+  .first-section__header img:last-child {
+    height: 1.8rem;
+  }
   .first-section__nav {
-    visibility: visible;
+    display: initial;
   }
   .first-section .head-title {
     padding-bottom: 5rem;
   }
+  .first-section .head-title h1 {
+    font-weight: 400;
+    font-size: 4.3rem;
+    line-height: 80px;
+    padding-bottom: 2rem;
+  }
+  .first-section .head-title__text {
+    width: 900px;
+  }
+  .first-section .head-title__text p {
+    font-size: 1.2rem;
+  }
   .first-section .head-title__form {
+    width: 800px;
+    padding-right: 8rem;
     background-color: white;
     border-radius: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
   .first-section .head-title__form form {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
     padding: 1rem;
   }
   .first-section .head-title__form--flex {
-    width: 10rem;
     display: flex;
     flex-direction: column;
+    gap: 1.3rem;
     padding: 0.5rem 0.5rem 1.5rem 0.5rem;
   }
+  .first-section .head-title__form--flex input {
+    padding-bottom: 1rem;
+  }
   .first-section .head-title__book-now {
+    background-color: #ff7757;
+    padding: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
-    border-radius: 0rem 1rem 1rem 0rem;
+    border-radius: 0rem 2rem 2rem 0rem;
   }
   .destinations {
+    padding: 2rem;
     background-color: white;
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
   }
+  .destinations__populartext {
+    font-size: 35px;
+    max-width: 600px;
+  }
   .destinations__photos {
-    padding-left: 2rem;
+    padding-left: 0rem;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
   }
   .destinations__imgHeight {
-    max-height: 499px;
+    max-height: 600px;
+  }
+  .special-offer {
+    padding: 2rem;
+  }
+  .special-offer__title {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 35px;
   }
   .our-blog {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     padding-bottom: 5rem;
   }
   .our-blog__tittletext {
+    font-size: 35px;
     padding-left: 1rem;
   }
   .our-blog__smalltext {
@@ -515,12 +578,16 @@ h6 {
   .our-blog__readmoretext, .our-blog__morelogo {
     padding: 1rem;
   }
+  .trip-planners {
+    padding: 2rem;
+  }
   .trip-planners__images {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
   .footer {
+    padding: 2rem;
     height: 400px;
     display: flex;
     flex-direction: row;
